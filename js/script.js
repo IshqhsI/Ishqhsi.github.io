@@ -14,10 +14,10 @@ createApp({
   },
 
   mounted() {
-    axios.get('ishqhsi-code.vercel.app/api/test').then((response) => {
-      this.datadaftar = JSON.parse(JSON.stringify(response.data));
+    axios.get('https://ishqhsi-code.vercel.app/test').then((response) => {
+      // this.datadaftar = JSON.parse(JSON.stringify(response.data));
 
-      console.log(this.datadaftar);
+      console.log(response.data);
     });
 
 
