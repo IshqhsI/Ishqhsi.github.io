@@ -33,9 +33,14 @@ createApp({
       }
     }, 
     test(){
-      axios.get(api + '/test-input').then((response) => {
-        console.log(response.data);
-      });
+      alert('tes');
+      try {
+        axios.get(this.api + '/test-input').then((response) => {
+          console.log(response.data);
+        });
+      } catch (error) {
+        console.error(error);
+      }
     }
   },
 }).mount('#app');
