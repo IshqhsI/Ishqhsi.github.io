@@ -13,7 +13,7 @@ app.get('/', (req, res) => {
 });
 
 app.get('/test', (req, res) => {
-  res.json(test);
+  res.send('<h1> Testtt!!! </h1>');
 });
 
 module.exports = app;
