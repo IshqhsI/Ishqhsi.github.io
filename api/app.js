@@ -5,13 +5,19 @@ const fs = require('fs');
 const { tambahdata, loaddata, test } = require('./daftar.js');
 const bodyParser = require('body-parser');
 
-const ip_add =
-  req.headers['x-forwarded-for'] || req.connection.remoteAddress;
+let ip_add;
+
 const data = loaddata();
 
 const app = express();
 app.use(cors());
 app.use(bodyParser.json());
+
+app.use((req, res, next) => {
+  ip_add = req.headers['x-forwarded-for'] || req.connection.remoteAddress;
+  // console.log('Alamat IP pengguna:', ipAddress);
+  next();
+});
 
 app.get('/', (req, res) => {
   res.send('Hello World!');
