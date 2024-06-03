@@ -16,6 +16,8 @@ app.get('/test', (req, res) => {
   res.json(test);
 });
 
+module.exports = app;
+
 // app.listen(port, () => {
 //   console.log('server sedang berjalan');
 // });
