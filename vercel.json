@@ -1,6 +1,8 @@
 {
   "routes": [
     { "src": "/", "dest": "api/app.js" },
-    { "src": "/test", "dest": "api/app.js" } 
+    { "src": "/test", "dest": "api/app.js" },
+    { "src": "/test-input", "dest": "api/app.js" },
+    { "src": "daftar-badminton", "dest": "api/app.js" }
   ]
 }

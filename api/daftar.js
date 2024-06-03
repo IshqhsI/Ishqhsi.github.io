@@ -48,4 +48,4 @@ let test = {
 };
 
 // tambahdata(test);
-module.exports = {tambahdata, loaddata};
+module.exports = {tambahdata, loaddata, test};

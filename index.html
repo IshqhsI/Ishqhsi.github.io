@@ -135,11 +135,69 @@
             <p class="fs-6">
               Pastikan untuk membawa raket dan sepatu olahraga yang nyaman! (Gaada Gpp)
             </p>
-            <button class="btn btn-primary">Daftar Sekarang</button>
+            <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#myModal">Daftar Sekarang</button>
+            <button class="btn btn-success" @click="test">test</button>
           </div>
         </div>
       </div>
     </div>
+
+    <!-- The Modal -->
+<div class="modal fade" id="myModal">
+  <div class="modal-dialog">
+    <div class="modal-content">
+
+      <!-- Modal Header -->
+      <div class="modal-header">
+        <h4 class="modal-title text-dark">Gas Main !!!</h4>
+        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
+
+      <!-- Modal body -->
+      <div class="modal-body text-dark">
+       <form action="" method="post" @submit.prevent="gasdaftar()">
+        <div class="mb-3">
+          <label for="nama" class="form-label">Nama</label>
+          <input
+            type="text"
+            class="form-control border border-1 border-dark"
+            name="nama"
+            id="nama"
+            aria-describedby="helpId"
+            placeholder="Masukkan Nama Anda"
+            v-model="nama"
+            required
+          />
+          <!-- <small id="helpId" class="form-text text-muted">Help text</small> -->
+        </div>
+        <div class="mb-3">
+          <label for="nohp" class="form-label">No. Hp (WA)</label>
+          <input
+            type="text"
+            class="form-control border border-1 border-dark"
+            name="nohp"
+            id="nohp"
+            aria-describedby="helpId"
+            placeholder="Masukkan No. HP (WhatsApp) Anda"
+            v-model="nohp"
+            required
+          />
+          <!-- <small id="helpId" class="form-text text-muted">Help text</small> -->
+        </div>
+        
+      </div>
+
+      <!-- Modal footer -->
+      <div class="modal-footer">
+        <button type="submit" class="btn btn-primary px-3">Gas</button>
+       </form>
+        <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+      </div>
+
+    </div>
+  </div>
+</div>
+
     <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
     <script src="js/script.js" type="module"></script>
     <script
