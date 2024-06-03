@@ -16,6 +16,6 @@ app.get('/test', (req, res) => {
   res.json(test);
 });
 
-app.listen(port, () => {
-  console.log('server sedang berjalan');
-});
+// app.listen(port, () => {
+//   console.log('server sedang berjalan');
+// });

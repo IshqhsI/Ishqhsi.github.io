@@ -14,7 +14,7 @@ createApp({
   },
 
   mounted() {
-    axios.get('http://localhost:3000/test').then((response) => {
+    axios.get('http://localhost:3000/api/test').then((response) => {
       this.datadaftar = JSON.parse(JSON.stringify(response.data));
 
       console.log(this.datadaftar);
