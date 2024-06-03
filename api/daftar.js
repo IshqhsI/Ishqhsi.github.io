@@ -1,11 +1,25 @@
+// const fs = require('fs');
+
+// const loaddata = () => {
+//     let data = fs.readFileSync('./test.json', 'utf-8');
+//     data = JSON.parse(data);
+
+//     return data;
+// }
 const fs = require('fs');
+const path = require('path');
 
 const loaddata = () => {
-    let data = fs.readFileSync('./test.json', 'utf-8');
-    data = JSON.parse(data);
-
-    return data;
-}
+  try {
+    // Gunakan path absolut untuk memastikan keakuratan lokasi file
+    const filePath = path.resolve(__dirname, './test.json');
+    let data = fs.readFileSync(filePath, 'utf-8');
+    return JSON.parse(data);
+  } catch (error) {
+    console.error('Gagal membaca file JSON:', error);
+    return null;
+  }
+};
 
 const tambahdata = (req) => {
     const daftar = {
