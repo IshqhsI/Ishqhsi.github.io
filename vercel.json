@@ -1,7 +1,5 @@
 {
-  "functions": {
-    "api/app": {
-      "handler": "api/app.js"
-    }
+  "build": {
+    "functions": { "api/index.js": { "runtime": "nodejs12.x", "memory": 512 } }
   }
 }
