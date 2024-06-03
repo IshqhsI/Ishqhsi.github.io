@@ -9,10 +9,12 @@
 const fs = require('fs');
 const path = require('path');
 
+const filePath = path.resolve(__dirname, './data/daftar.json');
+
+
 const loaddata = () => {
   try {
     // Gunakan path absolut untuk memastikan keakuratan lokasi file
-    const filePath = path.resolve(__dirname, './test.json');
     let data = fs.readFileSync(filePath, 'utf-8');
     return JSON.parse(data);
   } catch (error) {
@@ -35,7 +37,7 @@ const tambahdata = (req) => {
 }
 
 const simpandata = (data) => {
-  // fs.writeFileSync('./data/daftar.json', JSON.stringify(data));
+  fs.writeFileSync(filePath, JSON.stringify(data));
   console.log('Simpan data sukses!');
 };
 
