@@ -16,6 +16,8 @@ app.get('/test', (req, res) => {
     res.send('Test World!');
 });
 
+module.exports = app;
+
 // app.listen(port, () => {
 //   console.log('server sedang berjalan');
 // });
