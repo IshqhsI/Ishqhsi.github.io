@@ -1,5 +1,0 @@
-{
-  "build": {
-    "functions": { "api/index.js": { "runtime": "nodejs12.x", "memory": 512 } }
-  }
-}

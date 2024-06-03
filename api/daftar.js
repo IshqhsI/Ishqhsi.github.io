@@ -31,4 +31,5 @@ let test = {
   ip_add: '127.1.1:8000'
 };
 
+// tambahdata(test);
 module.exports = {tambahdata, loaddata};
