@@ -61,7 +61,7 @@ const tambahdata = (req) => {
 }
 
 const simpandata = (data) => {
-  fs.writeFileSync('./data/daftar.json', JSON.stringify(data));
+  // fs.writeFileSync('./data/daftar.json', JSON.stringify(data));
   console.log('Simpan data sukses!');
 };
 
