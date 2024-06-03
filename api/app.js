@@ -12,7 +12,7 @@ app.get('/', (req, res) => {
   res.send('Hello World!');
 });
 
-app.get('/api/test', (req, res) => {
+app.get('/test', (req, res) => {
     res.send('Test World!');
 });
 
