@@ -9,14 +9,12 @@ const app = express();
 app.use(cors());
 
 app.get('/', (req, res) => {
-  res.send('<h1> Hello World! </h1>');
+  res.send('Hello World!');
 });
 
-app.get('/test', (req, res) => {
-  res.send('<h1> Testtt!!! </h1>');
+app.get('/api/test', (req, res) => {
+    res.send('Test World!');
 });
-
-module.exports = app;
 
 // app.listen(port, () => {
 //   console.log('server sedang berjalan');
