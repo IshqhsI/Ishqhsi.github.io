@@ -28,7 +28,7 @@ app.get('/test', (req, res) => {
 });
 
 app.get('/test-input', (req, res) => {
-  // tambahdata(test);
+  tambahdata(test);
    res.send('Data berhasil ditambahkan'); 
 })
 
