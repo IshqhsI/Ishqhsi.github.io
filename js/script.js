@@ -24,10 +24,14 @@ createApp({
   },
 
   methods: {
-    async gasdaftar(){
+    await gasdaftar(){
       try {
-        const response = await axios.post(this.api +'/daftar-badminton', this.formData);
-        console.log(response.data);
+        // const response = await axios.post(this.api +'/daftar-badminton', this.formData);
+        // console.log(response.data);
+       let pesan = encodeURIComponent("Gas main.");
+      let whatsappURL = "https://wa.me/" + 082299854498 + "?text=" + pesan;
+      window.location.href = whatsappURL;
+        
       } catch (error) {
         console.error(error);
       }
