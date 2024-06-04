@@ -24,17 +24,23 @@ createApp({
   },
 
   methods: {
-    await gasdaftar(){
-      try {
-        // const response = await axios.post(this.api +'/daftar-badminton', this.formData);
-        // console.log(response.data);
-       let pesan = encodeURIComponent("Gas main.");
-      let whatsappURL = "https://wa.me/" + 082299854498 + "?text=" + pesan;
-      window.location.href = whatsappURL;
-        
-      } catch (error) {
-        console.error(error);
-      }
+    gasdaftar(){
+      // document
+      //   .getElementById('form_pengaduan')
+      //   .addEventListener('submit', function (event) {
+      //     event.preventDefault(); // Mencegah formulir untuk langsung melakukan submit
+      //     // let nama = document.getElementById('nama').value;
+      //     let pesan = document.getElementById('pengaduan').value;
+      //     console.log(pesan);
+
+      //     let link_wa =
+      //       'https://wa.me/6285161584485?text=' + encodeURIComponent(pesan);
+
+      //     window.location.href = link_wa;
+      //   });
+          // window.location.href = 'www.google.com';
+          console.log('gas main')
+
     }, 
     test(){
       alert('tes');
