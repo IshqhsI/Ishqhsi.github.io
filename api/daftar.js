@@ -34,6 +34,7 @@ const tambahdata = (req) => {
     Alldaftar.push(daftar);
 
     simpandata(Alldaftar);
+    console.log(loaddata());
 }
 
 const simpandata = (data) => {
@@ -47,5 +48,4 @@ let test = {
   ip_add: '127.1.1:8000'
 };
 
-// tambahdata(test);
 module.exports = {tambahdata, loaddata, test};
